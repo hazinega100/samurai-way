@@ -1,0 +1,35 @@
+.app-wrapper {
+    display: grid;
+
+    grid-template-areas:
+"header header header"
+"nav content content";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 5px;
+
+}
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+.sidebar {
+    grid-area: nav;
+    background-color: cadetblue;
+    height: 100vh;
+}
+.content {
+    grid-area: content;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+.ava {
+    background-color: bisque;
+    width: 150px;
+    height: 150px;
+}
